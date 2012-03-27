@@ -1,1 +1,26 @@
-../../../../submodules/resume/build/resume.css
+body {
+  font-family: Bree Serif;
+  background-color: #777777;
+  margin: 0px;
+  padding-bottom: 0px; }
+
+ol li {
+  list-style-type: decimal-leading-zero; }
+
+ul li {
+  list-style-type: square; }
+
+li li {
+  font-variant: lighter; }
+
+#content {
+  margin: 0 auto;
+  width: 800px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white; }
+
+#download-link {
+  position: fixed;
+  right: 10px;
+  bottom: 10px; }
