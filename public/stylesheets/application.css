@@ -66,11 +66,12 @@ a:focus, a:active {
 }
 
 body {
-  font: 13px Arial, Helvetica, sans-serif;
-  background: white;
-  color: #0d0d0d;
+  font: 13px "lucida grande", Arial, Helvetica, sans-serif;
+  background: #002935;
+  color: #ff3388;
 }
 body h1 {
+  text-shadow: black 4px 4px 4px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -81,13 +82,11 @@ body h1 {
   width: 100%;
 }
 body ul {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  background: #e7e7e7;
+  -moz-box-shadow: 4px 4px 4px black;
+  -webkit-box-shadow: 4px 4px 4px black;
+  -o-box-shadow: 4px 4px 4px black;
+  box-shadow: 4px 4px 4px black;
+  background: #bbdd33;
   border: 1px solid #cccccc;
   margin-top: 10px;
   margin-left: 10px;

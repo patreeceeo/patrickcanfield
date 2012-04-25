@@ -4,7 +4,7 @@
 
 // Base font
 =font-default
-  font: 13px Arial, Helvetica, sans-serif
+  font: 13px "lucida grande", Arial, Helvetica, sans-serif
   
 // Links
 a
@@ -20,9 +20,10 @@ a
 
 body
   +font-default
-  background: #fff
-  color: #0d0d0d
+  // background: #002935
+  color: #F38
   h1
+    +single-text-shadow(#000, 4px, 4px, 4px)
     position: absolute
     top: 50%
     left: 0
@@ -32,8 +33,9 @@ body
     text-align: center
     width: 100%
   ul
-    +border-radius(6px)
-    background: #e7e7e7
+    +box-shadow(#000, 4px, 4px, 4px)
+    // +border-radius(6px)
+    background: #bd3
     border: 1px solid #ccc
     margin-top: 10px
     margin-left: 10px
