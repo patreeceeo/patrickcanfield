@@ -176,10 +176,10 @@ h2 {
   z-index: 4;
   left: 50%;
   top: 0px;
-  margin-left: -179px;
+  margin-left: -179.5px;
   overflow: hidden;
   max-height: 47px;
-  width: 348px;
+  width: 349px;
 }
 #social-media a {
   position: relative;
@@ -442,6 +442,7 @@ h2 {
 }
 #skills li {
   font-size: 2.5em;
+  padding: 0.5em;
   display: inline;
   list-style: square !important;
 }
