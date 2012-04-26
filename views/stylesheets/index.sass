@@ -15,6 +15,7 @@ $blue: invert($yellow-orange)
 // Compass Constants
 $default-transition-function: ease
 
+
 a
   color: $yellow-orange
   cursor: pointer
@@ -32,8 +33,6 @@ body
   background-color: $blue-green
   overflow: hidden
 
-h1, h2
-  +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
 h1
   font-size: 1.5em
 h2
@@ -56,6 +55,7 @@ $front-card-container-min-w: 2*($front-card-container-min-h + $margin + $padding
 $front-card-h: $front-card-container-min-h 
 $front-card-w: $front-card-container-min-w 
 #front-card
+  +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
   position: absolute
   z-index: 1
   top: 50%
@@ -65,6 +65,33 @@ $front-card-w: $front-card-container-min-w
   height: $front-card-h
   width: $front-card-w
   color: $yellow-orange
+
+$social-media-n-icons: 4
+$social-media-icon-spacing: 20px
+$social-media-icon-size: 47px
+$social-media-w: $social-media-n-icons * ($social-media-icon-size + $social-media-icon-spacing*2) 
+#social-media
+  position: fixed
+  left: 50%
+  // top: $front-card-h + 30px
+  bottom: 0px
+  margin-left: -$social-media-w/2-$padding
+  overflow: hidden
+  max-height: $social-media-icon-size
+  width: $social-media-w
+  a
+    // +single-transition
+    position: relative
+    padding-left: $social-media-icon-spacing
+    padding-right: $social-media-icon-spacing
+    top: 10px
+    border-bottom: 1px solid white
+    img
+      width: $social-media-icon-size
+      height: $social-media-icon-size
+    &:hover
+      top: 0
+      // padding-top: 0px
 
 .hidden
   top: -300% !important
@@ -111,7 +138,7 @@ $info-background-color: lighten($blue-green, 0.7)
     font-size: 3em
 
 $bio-container-min-h: 600px
-$bio-container-min-w: $front-card-container-min-w
+$bio-container-min-w: 700px
 #bio-container
   +single-transition
   position: absolute
@@ -126,6 +153,7 @@ $bio-h: $bio-container-min-h
 $bio-w: $bio-container-min-w
 #bio
   +border-radius($border-radius)
+  +single-box-shadow(rgba(black, 0.5), 10px, 10px, 10px)
   position: absolute
   z-index: 3
   top: 50%
@@ -136,8 +164,31 @@ $bio-w: $bio-container-min-w
   height: $bio-h
   width: $bio-w
   padding: $padding
-  font-size: 1.5em
+  h2
+    +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+    font-size: 3em
+  strong
+    line-height: 1.5em
+    font-size: 1.5em
+  .paperclip
+    position: absolute
+    margin-top: 20px
+    margin-left: -60px
+    z-index: 9999
+    height: 120px
+    width: 120px
+    background-image: url('/images/paperclip.png')
+    background-repeat: no-repeat
+    background-size: 120px auto
+  .image-container
+    overflow: hidden
+    float: left
+    padding: 10px
+    background-color: white
+    border: 1px solid gray
+    margin: 10px
   p
+    line-height: 2em
     padding-top: 0.5em
     padding-bottom: 0.5em
     padding-left: 15px
