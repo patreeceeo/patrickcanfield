@@ -58,3 +58,67 @@ body {
   font-family: Bree Serif;
   font-size: 13px;
 }
+
+body {
+  font-size: 18px;
+  background-color: #777777;
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+#resume {
+  -webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  width: 848px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+p, ul {
+  line-height: 1.5em;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol, ul {
+  list-style-position: inside;
+}
+ol li, ul li {
+  display: list-item;
+}
+
+ol li {
+  list-style-type: decimal-leading-zero;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+li li {
+  font-variant: lighter;
+}

@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'maruku'
 
 # Helpers
+require './lib/helpers'
 require './lib/render_partial'
 
 # Set Sinatra variables
@@ -17,8 +19,8 @@ get '/' do
   haml :index, :layout => :'layouts/application'
 end
 
-get '/about' do
-  haml :about, :layout => :'layouts/page'
+get '/resume' do
+  haml :resume, :layout => :'layouts/application'
 end
 
 

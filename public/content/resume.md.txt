@@ -1,0 +1,49 @@
+Patrick Canfield
+================
+Programmer/Software Developer  
+----------------------------
+Mobile: (321) 747-3001  
+patrickcandoit@gmail.com 
+
+__Career Objective__ 
+
+-   Gain expertise in programming and software engineering in environments that foster creative problem solving and use this expertise as a researcher/entrepreneur.
+
+__Education__ 
+
+1.   University of North Florida      
+  -   B.S. Computer Science (Spring 2009)  
+  -   University Honors Graduate  
+  -   Dean's List (Fall 2007, Spring 2008)
+2.   University of Life
+  -   Currently studying Python, Ruby/Rails, Javascript/jQuery, and principles of software engineering and general problem solving.
+
+__Experience__ 
+
+1.   Participated in a "Transformational Learning Opportunity" at UNF
+  -   Using .NET (C#), developed a web-based alternative to an educational program that was traditionally delivered on paper. Was transformed into a proponent of FOSS.
+2.   Web Development Intern at Addison Commercial Real Estate, Inc.      
+  -   118 West Adams Street  
+  -   Jacksonville, Florida 32202  
+  -   [www.acrei.com][www.acrei.com] 
+  -   January 2008 - June 2009 
+  -   Using PHP, JS, MySQL and YUI, developed a home-grown content management system for the company website.
+3.   Programmer at Adtec, Inc.
+  -   2231 Corporate Square Blvd.  
+  -   Jacksonville, FL 32216-1921  
+  -   [www.adtecinc.com][www.adtecinc.com]
+  -   July 2008 - November 2011 
+  -   While writing an SNMP agent using C++ on Linux, introduced a RESTful API to the firmware of a product line troubled by "unmaintainable code". Product specialist said my work could "revive the product line". We'll see.
+4.   Web Development Contractor for Bonbi/Bimini
+  -   [www.bon.com.mx][www.bon.com.mx]
+  -   January 2012 - March 2012
+  -   Built a product promotion site using Ruby/Sinatra, jQuery, Sass and Compass.
+5.   Web Developer at PaySpan, Inc.
+  -   [www.payformance.com][www.payformance.com]
+  -   February 2012 - Present
+  -   Currently developing an internal application in Groovy to speed up repetitive tasks in my less busy time.
+
+ [www.acrei.com]: http://www.acrei.com
+ [www.adtecinc.com]: http://www.adtecinc.com
+ [www.bon.com.mx]: http://www.bon.com.mx
+ [www.payformance.com]: http://www.payformance.com

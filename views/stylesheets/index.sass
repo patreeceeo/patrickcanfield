@@ -1,0 +1,154 @@
+@import compass/reset
+@import compass/utilities
+@import compass/css3
+@import "compass/css3/transition"
+@import "application"
+
+
+$border-radius: 10px
+$margin: 5px
+$padding: 5px
+$blue-green: #002935
+$pink: #F38 
+$yellow-orange: #FA0
+$blue: invert($yellow-orange)
+// Compass Constants
+$default-transition-function: ease
+
+a
+  color: $yellow-orange
+  cursor: pointer
+  text-decoration: none
+  width: 100%
+  &:hover
+    color: $blue
+  &:focus,
+  &:active
+    color: $pink
+  &:visited
+    // Default style for visited links
+
+body
+  background-color: $blue-green
+  overflow: hidden
+
+h1, h2
+  +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+h1
+  font-size: 1.5em
+h2
+  color: $pink
+  font-family: Bilbo Swash Caps
+  font-size: 1.5em
+
+$front-card-container-min-h: 300px + 2 * ($margin + $padding)
+$front-card-container-min-w: 2*($front-card-container-min-h + $margin + $padding)
+#front-card-container
+  +single-transition
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  min-height: $front-card-container-min-h
+  min-width: $front-card-container-min-w
+
+$front-card-h: $front-card-container-min-h 
+$front-card-w: $front-card-container-min-w 
+#front-card
+  position: absolute
+  z-index: 1
+  top: 50%
+  left: 50%
+  margin-top: -$front-card-h/2
+  margin-left: -$front-card-w/2
+  height: $front-card-h
+  width: $front-card-w
+  color: $yellow-orange
+
+.hidden
+  top: -300% !important
+  min-height: 0 !important
+  min-width: 0 !important
+  bottom: auto !important
+
+$likeness-image-w: $front-card-h
+$likeness-image-h: $front-card-h
+#likeness-image-container
+  +single-box-shadow(rgba(white, 0.5), 0, 0, $likeness-image-h, 0, false)
+  +border-radius($border-radius)
+  background-image: url(/images/profile0.jpg)
+  background-size: $likeness-image-h $likeness-image-w
+  height: $likeness-image-h
+  width: $likeness-image-w
+  overflow: hidden
+  float: left
+  margin: $margin
+  img
+    height: inherit
+    width: inherit
+
+#likeness-image-text
+  position: absolute
+  left: $padding
+  bottom: -$padding
+  padding: $padding
+
+$info-h: $likeness-image-h
+$info-w: $likeness-image-w
+$info-background-color: lighten($blue-green, 0.7)
+#info
+  +border-radius($border-radius)
+  margin: $margin
+  width: $info-w
+  height: $info-h
+  background-color: $info-background-color
+  float: right
+  h2
+    padding: $padding
+  & > ul
+    padding: $padding
+    font-size: 3em
+
+$bio-container-min-h: 600px
+$bio-container-min-w: $front-card-container-min-w
+#bio-container
+  +single-transition
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  min-height: $bio-container-min-h
+  min-width: $bio-container-min-w
+
+$bio-h: $bio-container-min-h
+$bio-w: $bio-container-min-w
+#bio
+  +border-radius($border-radius)
+  position: absolute
+  z-index: 3
+  top: 50%
+  left: 50%
+  margin-left: -$bio-w/2
+  margin-top: -$bio-h/2
+  background-color: #EED
+  height: $bio-h
+  width: $bio-w
+  padding: $padding
+  font-size: 1.5em
+  p
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+    padding-left: 15px
+    padding-right: 15px
+    text-align: justify
+    font-weight: lighter
+  header
+    display: block
+    width: 100%
+    height: 1em
+    .links
+      float: right
+    h2
+      float: left

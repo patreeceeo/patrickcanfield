@@ -1,23 +1,39 @@
-%section
-  #likeness-image-container
-    %img(src="/images/profile0.jpg")
-  #intro-text
-    %h1 Patrick Canfield
-    %ul#titles
-      %li Software Developer
-      %li Web Developer
 
-    %ul#Links
-      %li
-        %a(onClick="show('resume')") Resume
-      %li
-        %a(onClick="show('bio')") Bio
-      %li
-        %a(href="http://devtoo.net") My Employer
-      %li
-        %a(href="https://facebook.com/patrickcanfield68") Facebook
-      %li
-        %a(href="http://linkedin.com/in/hacktrick") Linkedin
-      %li
-        %a(href="https://github.com/patrickc56") Github
+%link(href='/stylesheets/index.css' media = "screen" rel = 'stylesheet' type = "text/css")
 
+#front-card-container
+  #front-card
+    #likeness-image-container
+      #likeness-image-text
+        %h1 Patrick Canfield
+        %h2 Web / Software Developer
+
+    #info
+      %h2 :: Links &amp; Stuff ::
+      %ul#links
+        %li
+          %a(href="/resume") Resume
+        %li
+          %a(onClick="show('portfolio')") Portfolio
+        %li
+          %a(onClick="show('bio')") Bio
+        %li
+          %a(href="http://devtoo.net") Company
+        %li
+          %a(href="https://facebook.com/patrickcanfield68") Facebook
+        %li
+          %a(href="http://linkedin.com/in/hacktrick") Linkedin
+        %li
+          %a(href="https://github.com/patrickc56") Github
+
+#bio-container.hidden
+  #bio
+    %header
+      .links
+        %a(href="#" onClick="hide('bio')") hide
+      %h2 Bio
+    %p
+    %p I've always had an interest in computers. Growing up I visited Kennedy Space Center with my mother (it was take your son to work day) and marveled at the ancient mainframes still using massive wheels of tape for memory and learned to write the "hello, world!" program in C from one of the engineers. I also created my first website, an informational site for the state high school cross country championship, of which my father was the host, as a middle-schooler. 
+    %p After briefly considering Art in high school, I decided to study Computer Science at the University of North Florida, getting a little aid from a track scholarship. Despite, as a freshman, receiving a letter from my philosophy professor encouraging me to major in philosophy, I was sure I made the right choice and graduated with a Bachelors of Science in CS. I worked as a software development intern during my senior year for a small company specializing in high-end video hardware solutions and joined their team as a full-time member after graduating in 2009. When the company hit hard times in 2011, I was laid-off. 
+    %p The silver lining is that this freed me to find work that I really want to do: creating a start-up company. Through networking at events such as StartupWeekend, I've met great people and discovered wonderful opportunities such as the one I'm applying for now. 
+    -# = content :bio
