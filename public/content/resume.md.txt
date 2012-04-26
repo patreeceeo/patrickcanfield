@@ -40,8 +40,8 @@ __Experience__
   -   Built a product promotion site using Ruby/Sinatra, jQuery, Sass and Compass.
 5.   Web Developer at PaySpan, Inc.
   -   [www.payformance.com][www.payformance.com]
-  -   February 2012 - Present
-  -   Currently developing an internal application in Groovy to speed up repetitive tasks in my less busy time.
+  -   February 2012 - April 2012
+  -   Developed an internal application in Groovy to speed up repetitive tasks in my less busy time.
 
  [www.acrei.com]: http://www.acrei.com
  [www.adtecinc.com]: http://www.adtecinc.com

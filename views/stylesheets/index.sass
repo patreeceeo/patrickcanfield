@@ -72,9 +72,10 @@ $social-media-icon-size: 47px
 $social-media-w: $social-media-n-icons * ($social-media-icon-size + $social-media-icon-spacing*2) 
 #social-media
   position: fixed
+  z-index: 4
   left: 50%
   // top: $front-card-h + 30px
-  bottom: 0px
+  top: 0px
   margin-left: -$social-media-w/2-$padding
   overflow: hidden
   max-height: $social-media-icon-size
@@ -84,13 +85,12 @@ $social-media-w: $social-media-n-icons * ($social-media-icon-size + $social-medi
     position: relative
     padding-left: $social-media-icon-spacing
     padding-right: $social-media-icon-spacing
-    top: 10px
-    border-bottom: 1px solid white
+    bottom: 10px
     img
       width: $social-media-icon-size
       height: $social-media-icon-size
     &:hover
-      top: 0
+      bottom: 0
       // padding-top: 0px
 
 .hidden
@@ -164,9 +164,6 @@ $bio-w: $bio-container-min-w
   height: $bio-h
   width: $bio-w
   padding: $padding
-  h2
-    +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
-    font-size: 3em
   strong
     line-height: 1.5em
     font-size: 1.5em
@@ -195,11 +192,107 @@ $bio-w: $bio-container-min-w
     padding-right: 15px
     text-align: justify
     font-weight: lighter
+  h2
+    +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+    font-size: 3em
+    float: left
   header
     display: block
     width: 100%
     height: 1em
     .links
       float: right
-    h2
-      float: left
+
+$portfolio-container-min-w: 660px + 4*($margin + $padding)
+$portfolio-container-min-h: 600px
+#portfolio-container
+  +single-transition
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  min-height: $portfolio-container-min-h
+  min-width: $portfolio-container-min-w
+
+$portfolio-w: $portfolio-container-min-w
+$portfolio-h: $portfolio-container-min-h
+#portfolio
+  +border-radius($border-radius)
+  position: absolute
+  z-index: 2
+  top: 50%
+  left: 50%
+  width: $portfolio-w
+  margin-left: -$portfolio-container-min-w/2
+  margin-top: -$portfolio-h/2
+  background-color: rgba(white, 0.8)
+  padding: $padding
+  font-size: 1.5em
+  .item
+    margin: $margin
+    padding: $padding
+    width: ($portfolio-w)/2 - 2*($margin + $padding)
+    float: left
+  .title
+    padding-bottom: 0.5em
+  .image-container
+    img
+      width: inherit
+  h2
+    +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+    font-size: 2em
+    float: left
+  header
+    clear: both
+    display: block
+    width: 100%
+    height: 2em
+    .links
+      +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+      float: right
+    
+$skills-container-min-w: 660px
+$skills-container-min-h: $front-card-container-min-h
+#skills-container 
+  +single-transition
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  min-height: $skills-container-min-h
+  min-width: $skills-container-min-w
+
+$skills-w: $skills-container-min-w
+$skills-h: $skills-container-min-h
+#skills 
+  +border-radius($border-radius)
+  position: absolute
+  z-index: 2
+  top: 50%
+  left: 50%
+  width: $skills-w
+  height: $skills-h
+  margin-left: -$skills-w/2
+  margin-top: -$skills-h/2
+  background-color: rgba(white, 0.8)
+  padding: $padding
+  font-size: 1.5em
+  h2
+    +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+    font-size: 2em
+    float: left
+  header
+    clear: both
+    display: block
+    width: 100%
+    height: 2em
+    .links
+      +text-shadow(rgba(black, 1) 1px 1px 0, rgba(black, 1) 2px 2px 0)
+      float: right
+  li
+    font-size: 2.5em
+    // padding: 0.5em
+    display: inline
+    list-style: square !important

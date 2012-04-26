@@ -173,8 +173,9 @@ h2 {
 
 #social-media {
   position: fixed;
+  z-index: 4;
   left: 50%;
-  bottom: 0px;
+  top: 0px;
   margin-left: -179px;
   overflow: hidden;
   max-height: 47px;
@@ -184,15 +185,14 @@ h2 {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
-  top: 10px;
-  border-bottom: 1px solid white;
+  bottom: 10px;
 }
 #social-media a img {
   width: 47px;
   height: 47px;
 }
 #social-media a:hover {
-  top: 0;
+  bottom: 0;
 }
 
 .hidden {
@@ -286,10 +286,6 @@ h2 {
   width: 700px;
   padding: 5px;
 }
-#bio h2 {
-  text-shadow: black 1px 1px 0, black 2px 2px 0;
-  font-size: 3em;
-}
 #bio strong {
   line-height: 1.5em;
   font-size: 1.5em;
@@ -322,6 +318,11 @@ h2 {
   text-align: justify;
   font-weight: lighter;
 }
+#bio h2 {
+  text-shadow: black 1px 1px 0, black 2px 2px 0;
+  font-size: 3em;
+  float: left;
+}
 #bio header {
   display: block;
   width: 100%;
@@ -330,6 +331,117 @@ h2 {
 #bio header .links {
   float: right;
 }
-#bio header h2 {
+
+#portfolio-container {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 600px;
+  min-width: 700px;
+}
+
+#portfolio {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  margin-left: -350px;
+  margin-top: -300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 1.5em;
+}
+#portfolio .item {
+  margin: 5px;
+  padding: 5px;
+  width: 330px;
   float: left;
+}
+#portfolio .title {
+  padding-bottom: 0.5em;
+}
+#portfolio .image-container img {
+  width: inherit;
+}
+#portfolio h2 {
+  text-shadow: black 1px 1px 0, black 2px 2px 0;
+  font-size: 2em;
+  float: left;
+}
+#portfolio header {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 2em;
+}
+#portfolio header .links {
+  text-shadow: black 1px 1px 0, black 2px 2px 0;
+  float: right;
+}
+
+#skills-container {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-height: 320px;
+  min-width: 660px;
+}
+
+#skills {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 660px;
+  height: 320px;
+  margin-left: -330px;
+  margin-top: -160px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 1.5em;
+}
+#skills h2 {
+  text-shadow: black 1px 1px 0, black 2px 2px 0;
+  font-size: 2em;
+  float: left;
+}
+#skills header {
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 2em;
+}
+#skills header .links {
+  text-shadow: black 1px 1px 0, black 2px 2px 0;
+  float: right;
+}
+#skills li {
+  font-size: 2.5em;
+  display: inline;
+  list-style: square !important;
 }

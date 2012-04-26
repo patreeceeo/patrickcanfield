@@ -18,6 +18,8 @@
         %li
           %a(onClick="show('bio')") Bio
         %li
+          %a(onClick="show('skills')") Skills
+        %li
           %a(href="http://devtoo.net") Company
     #social-media
       %a(href="https://facebook.com/patrickcanfield68")
@@ -44,4 +46,51 @@
     %p After briefly considering Art in high school, I decided to study Computer Science at the University of North Florida, getting a little aid from a track scholarship. Despite, as a freshman, receiving a letter from my philosophy professor encouraging me to major in philosophy, I was sure I made the right choice and graduated with a <strong>Bachelors of Science</strong> in <strong>Computer Science</strong>. I worked as a software development intern during my senior year for a small company specializing in high-end video hardware solutions and joined their team as a full-time member after graduating in 2009. When the company hit hard times in 2011, I was laid-off. 
     %p The silver lining is that this freed me to find work that I really want to do: creating a start-up company. Through networking at events such as StartupWeekend, I've met great people and discovered wonderful opportunities. 
     -# = content :bio
+
+#portfolio-container.hidden
+  #portfolio
+    %header
+      .links
+        %a(href="#" onClick="hide('portfolio')") hide
+      %h2 Portfolio
+    .item
+      .title For Pay
+      .image-container
+        %a(href="http://bon.com.mx")
+          %img(src="/images/bon.com.mx.jpg")
+    
+    .item
+      .title For Free (under construction)
+      .image-container
+        %a(href="http://helcross.com")
+          %img(src="/images/helcross.com.jpg")
+ 
+    .item
+      .title For Fun
+      .image-container
+        %a(href="http://prettyawful.net")
+          %img(src="/images/prettyawful.net.jpg")
+
+#skills-container.hidden
+  #skills
+    %header
+      .links
+        %a(href="#" onClick="hide('skills')") hide
+      %h2 Skills
+    %ul
+      %li Javascript
+      %li jQuery
+      %li SCSS
+      %li HAML
+      %li Ruby
+      %li Sinatra
+      %li Rails
+      %li C++
+      %li Linux
+      %li Git
+      %li Python
+      %li Pyramid
+      %li Django
+      %li Zsh
+      %li Mac OS
 
